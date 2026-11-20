@@ -11,13 +11,20 @@
       "bundleIdentifier": "app.swiftgram.ios",
       "developerName": "RegramDev",
       "subtitle": "Telegram 第三方客户端（非 Instagram 版 Regram）",
-      "localizedDescription": "更新内容\n\n- 支持的 iPhone 上，ReSieve 使用 Neural Engine 快速识别明确正常的文本，广告候选继续由 CPU 复核。\n- 减少长消息的重复分词和窗口计算，进入聊天或查看置顶时优先处理当前内容。低电量或严重发热时沿用节流策略。\n\nSHA-256: cbe79789a1176eccf539e93edd3298df1ec400b6566265fa24afc9ae19da62e8\n\n原版 13.2 (b34663)。在 LiveContainer 里用：下载后导入 LiveContainer 覆盖，别用内置更新走证书安装。",
+      "localizedDescription": "更新内容\n\n- ReSieve 更新为 1.3.0 模型，判定阈值调整为 0.9835；构建与解码过滤输入时把消息实体范围对齐到字符边界。\n- 通知扩展每次推送重新读取设置：置顶、提及／回复通知策略和消息过滤在 App 内修改后立即生效。\n- 「忽略阅后即焚计时」同时保留普通聊天里的一次性／阅后即焚媒体；「截图时不通知对方」覆盖私聊一次性媒体的预览页。\n- 「允许保存受保护内容」覆盖私聊的「禁止分享」，聊天、相册、资料页和音乐播放器的保存与截图限制一致放开；服务端拒绝的转发仍保持限制。\n- 幽灵模式切换「不发送在线状态」后立即重新上报在线状态。\n- 移除已失效的 Google CN 与 Microsoft 翻译服务，原选择和旧备份自动迁移到 Google。\n- 链接预览修复的默认 Instagram 服务改为 instagramfix.com（原 ddinstagram.com 已停止服务），补充 www.tiktok.com 与 reddit.com，远程规则缺少的域名保留内置规则。\n\nSHA-256: ddaf003758cc4220a8482154ee1d6df91298198ad3e0ed543ecf9c9c0d0107e2\n\n原版 13.2 (b34663)。在 LiveContainer 里用：下载后导入 LiveContainer 覆盖，别用内置更新走证书安装。",
       "iconURL": "https://raw.githubusercontent.com/pigpigiii/regram-altstore-source/main/icons/regram.jpg",
-      "version": "13.2.34663",
-      "versionDate": "2026-11-17T01:07:19Z",
-      "downloadURL": "https://github.com/RegramDev/Regram-ios/releases/download/v13.2-b34663/Regram-13.2-b34663.ipa",
-      "size": 103770565,
+      "version": "13.2.34665",
+      "versionDate": "2026-11-19T14:39:35Z",
+      "downloadURL": "https://github.com/RegramDev/Regram-ios/releases/download/v13.2-b34665/Regram-13.2-b34665.ipa",
+      "size": 103777910,
       "versions": [
+        {
+          "version": "13.2.34665",
+          "date": "2026-11-19T14:39:35Z",
+          "localizedDescription": "更新内容\n\n- ReSieve 更新为 1.3.0 模型，判定阈值调整为 0.9835；构建与解码过滤输入时把消息实体范围对齐到字符边界。\n- 通知扩展每次推送重新读取设置：置顶、提及／回复通知策略和消息过滤在 App 内修改后立即生效。\n- 「忽略阅后即焚计时」同时保留普通聊天里的一次性／阅后即焚媒体；「截图时不通知对方」覆盖私聊一次性媒体的预览页。\n- 「允许保存受保护内容」覆盖私聊的「禁止分享」，聊天、相册、资料页和音乐播放器的保存与截图限制一致放开；服务端拒绝的转发仍保持限制。\n- 幽灵模式切换「不发送在线状态」后立即重新上报在线状态。\n- 移除已失效的 Google CN 与 Microsoft 翻译服务，原选择和旧备份自动迁移到 Google。\n- 链接预览修复的默认 Instagram 服务改为 instagramfix.com（原 ddinstagram.com 已停止服务），补充 www.tiktok.com 与 reddit.com，远程规则缺少的域名保留内置规则。\n\nSHA-256: ddaf003758cc4220a8482154ee1d6df91298198ad3e0ed543ecf9c9c0d0107e2\n\n原版 13.2 (b34663)。在 LiveContainer 里用：下载后导入 LiveContainer 覆盖，别用内置更新走证书安装。",
+          "downloadURL": "https://github.com/RegramDev/Regram-ios/releases/download/v13.2-b34665/Regram-13.2-b34665.ipa",
+          "size": 103777910
+        },
         {
           "version": "13.2.34663",
           "date": "2026-11-17T01:07:19Z",
@@ -53,13 +60,20 @@
       "bundleIdentifier": "com.jbdotparty.Erosion",
       "developerName": "Kianuni",
       "subtitle": "iOS MobileGestalt 系统配置工具箱（中英双语）",
-      "localizedDescription": "Erosion-CN v1.0.5 (Build 30)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Fixed Unresponsive \"Clean Selected\" in Container Cache Cleaner (`CacheCleanerView`) / 修复容器缓存「一键清理已选」不生效** *(Thanks to [@KindLin99](https://github.com/KindLin99) for reporting [#53](https://github.com/Kianuni/Erosion-CN/issues/53) / 感谢 [@KindLin99](https://github.com/KindLin99) 反馈 [#53](https://github.com/Kianuni/Erosion-CN/issues/53))*\n   - **Separated Button Styles in Overview Card**：Assigned `.borderless` to **Rescan** (`重新扫描`) and promoted **Clean Selected** (`一键清理已选`) to a full-width `.borderedProminent` button snapshotting targets prior to confirmation, eliminating SwiftUI `List` multi-button tap hijacking.\n   - **Prevented Row Hit-Box Hijacking**：Replaced inline `NavigationLink` on **Inspect** (`查看`) with a `.borderless` button + `.navigationDestination(item:)` so tapping row checkboxes or **Clean** (`清理`) never triggers accidental navigation.\n   - **Ad-Sentinel Protection & Re-Sized Refresh**：Unified scan/purge traversal depth (`Library/Caches` depth `7`, `tmp` depth `6`), skipped `.erosion_adlock` anti-recreate ad folders during cleanup, and updated remaining bytes / auth failure reporting accurately after \n\n官方源 https://raw.githubusercontent.com/Kianuni/Erosion-CN/main/apps.json 也有同一版，这里只做汇总。",
+      "localizedDescription": "Erosion-CN v1.0.6 (Build 31)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **General Splash Ad Blocker Whitelist & Manual Manager (`AdWhitelistStore` / `AdWhitelistManagerSheet`) / 去广告应用与路径通用白名单及手动管理面板** *(Thanks to [@appleoner](https://github.com/appleoner) for suggesting [#56](https://github.com/Kianuni/Erosion-CN/issues/56) / 感谢 [@appleoner](https://github.com/appleoner) 在 [#56](https://github.com/Kianuni/Erosion-CN/issues/56) 提出建议)*\n   - **Dedicated Whitelist Manager (`白名单`)**：Added top-bar & Overview card entry points supporting **manual `Bundle ID` / `AppGroup ID` entry**, **quick-picking from installed third-party containers**, **manual container subpath entry**, and one-tap deletion of rules.\n   - **Per-App, Per-Path & File Browser Controls**：Whitelist an entire app + its matching `group.<bundleID>` AppGroups from the container `⋯` menu, exempt a specific folder/config via the row **Ignore (`加白`)** button, or long-press any file/folder in **File Browser** → **Add to Ad Whitelist**.\n   - **Auto-Skip & Auto-Restore**：Whitelisted apps and paths automatically skip global **Lock All** (`一键全锁`) and immediately restore `0755`/`0644` writable permissions (cleaning `.erosion_adlock`) when ad\n\n官方源 https://raw.githubusercontent.com/Kianuni/Erosion-CN/main/apps.json 也有同一版，这里只做汇总。",
       "iconURL": "https://raw.githubusercontent.com/pigpigiii/regram-altstore-source/main/icons/erosion.png",
-      "version": "1.0.5",
-      "versionDate": "2026-11-17T23:33:43Z",
-      "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.5/Erosion_v1.0.5_Bilingual.ipa",
-      "size": 6875541,
+      "version": "1.0.6",
+      "versionDate": "2026-11-19T13:48:12Z",
+      "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.6/Erosion_v1.0.6_Bilingual.ipa",
+      "size": 6948787,
       "versions": [
+        {
+          "version": "1.0.6",
+          "date": "2026-11-19T13:48:12Z",
+          "localizedDescription": "Erosion-CN v1.0.6 (Build 31)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **General Splash Ad Blocker Whitelist & Manual Manager (`AdWhitelistStore` / `AdWhitelistManagerSheet`) / 去广告应用与路径通用白名单及手动管理面板** *(Thanks to [@appleoner](https://github.com/appleoner) for suggesting [#56](https://github.com/Kianuni/Erosion-CN/issues/56) / 感谢 [@appleoner](https://github.com/appleoner) 在 [#56](https://github.com/Kianuni/Erosion-CN/issues/56) 提出建议)*\n   - **Dedicated Whitelist Manager (`白名单`)**：Added top-bar & Overview card entry points supporting **manual `Bundle ID` / `AppGroup ID` entry**, **quick-picking from installed third-party containers**, **manual container subpath entry**, and one-tap deletion of rules.\n   - **Per-App, Per-Path & File Browser Controls**：Whitelist an entire app + its matching `group.<bundleID>` AppGroups from the container `⋯` menu, exempt a specific folder/config via the row **Ignore (`加白`)** button, or long-press any file/folder in **File Browser** → **Add to Ad Whitelist**.\n   - **Auto-Skip & Auto-Restore**：Whitelisted apps and paths automatically skip global **Lock All** (`一键全锁`) and immediately restore `0755`/`0644` writable permissions (cleaning `.erosion_adlock`) when ad\n\n官方源 https://raw.githubusercontent.com/Kianuni/Erosion-CN/main/apps.json 也有同一版，这里只做汇总。",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.6/Erosion_v1.0.6_Bilingual.ipa",
+          "size": 6948787
+        },
         {
           "version": "1.0.5",
           "date": "2026-11-17T23:33:43Z",
